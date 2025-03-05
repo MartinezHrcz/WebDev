@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Hello! I'm Herczeg Martinez</h1>
-    </div>
-    <div class="pagecontent">
-        <div class="todo">
-            <input type="button" value="Click me!">
+    <div class="page">
+        <div class="header">
+            <h1>Hello! I'm Herczeg Martinez</h1>
+        </div>
+        <div class="pagecontent">
+            <div class="todo">
+                <p>Input</p>
+                <input type="text" id="inputtxt">
+                <input type="checkbox" id="checked">
+                <input type="button" onclick="AddNew()">
+                <hr>
+                <div id="tasks"></div>
+            </div>
         </div>
     </div>
+    
 </body>
 </html>
