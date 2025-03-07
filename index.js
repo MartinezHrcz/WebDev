@@ -1,9 +1,6 @@
 
-function spellout(){
-    document.getElementById("datehere").innerHTML = "sldfljdslk";
-}
-
-function AddNew(){
-    var str = document.getElementById("inputtxt").value;
-    document.getElementById("tasks").innerHTML += str;
+function AddNewTask(){
+    var task = document.getElementById("inputbox").value;
+    var htm = '<p>'+ task +'</p>';
+    document.getElementById("typeHere").innerHTML += htm;
 }

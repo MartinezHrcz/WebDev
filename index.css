@@ -1,41 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    font-family: "Ubuntu";
+}
 
 .page{
-    height: 100vh;
-    width: 100vw;
+    width: calc(100vw - 2em);
+    height: calc(100vh - 2em);
+    background-color: lightsteelblue;
+    border: 1em ridge black;
 }
-.pagecontent{
-    background-color: azure;
-    font-family: 'Courier New', Courier, monospace;
-    width: 50%;
-    height: 100%;
-    margin: auto;
-    margin-top: 2%;
-    border: 6px solid black;
-}
-
-.todo{   
-    display: block;
-    justify-content: center;
-    padding-right: 20px;
-    padding-left: 20px;
-
-}
-
-
 
 .header{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 10%;
     width: 100%;
-    height: 15%;
-    padding: 1em;
-    text-align: left;
-    text-transform:uppercase;
-    text-anchor: middle;
-    font-weight: bold;
-    background-color: gray;
-    color: whitesmoke;
-    margin: 0;
+    margin: auto;
+    text-align: center;
+    background-color: lightblue;
+    border-bottom: 0.1em solid black;
 }
-body{
-    margin: 0;
+
+#headertext{
+    padding-top: 1%;
+    text-transform: uppercase;
+    font-size:3dvw;
+}
+
+.inputs{
+    padding-left: 0.3em;
+    padding-top: 1em;
+    font-size: large;
+}
+
+.toDoList{
+    height: 70%;
+    border-top: 0.1em solid black;
+    margin-top: 0.4em ;
+    padding-left: 0.3em;
+} 
+
+#typeHere{
+    width: 40%;
+    height: 100%;
+    border: 0.5em solid lightslategray;
+    margin: auto;
+}
+
+#taskLabel{
+    padding-left: calc(50vw - 20%);
 }
