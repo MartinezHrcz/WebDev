@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do app</title>
-    <script src="index.js"></script>
+    <title>First website</title>
     <link rel="stylesheet" href="index.css">
+    <script src="app.js"></script>
 </head>
 <body>
-    <div class="page">
-        <div class="header">
-            <p id="headertext">To do app!</p>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo">Martinez</a>
+            <div class="navbar_toggle" id="mobil-menu">
+
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="/" class="navbar_links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="tech.html" class="navbar_links">
+                        Tech
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/" class="navbar_links">
+                        Products
+                    </a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="/" class="button">
+                        Sign up
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="inputs">
-            <p>Type your task here!</p>
-            <input type="text" id="inputbox" > <input type="button" value="Add" onclick="AddNewTask()">
-        </div>
-        <div class="toDoList">
-            <p id="taskLabel">Tasks: </p>
-            <div id="typeHere"></div>
-        </div>
-    </div>
+    </nav>
 </body>
 </html>

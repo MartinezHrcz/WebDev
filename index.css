@@ -1,51 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 *{
+    box-sizing: border-box;
     margin: 0;
-    font-family: "Ubuntu";
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.navbar{
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.2rem ;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
-.page{
-    width: calc(100vw - 2em);
-    height: calc(100vh - 2em);
-    background-color: lightsteelblue;
-    border: 1em ridge black;
-}
-
-.header{
-    height: 10%;
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
     width: 100%;
-    margin: auto;
-    text-align: center;
-    background-color: lightblue;
-    border-bottom: 0.1em solid black;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
 }
 
-#headertext{
-    padding-top: 1%;
+#navbar_logo{
+    background-color: #ff8177;
+    background-image: linear-gradient(to top,#ff0844 0%, #ffb1ff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
     text-transform: uppercase;
-    font-size:3dvw;
 }
 
-.inputs{
-    padding-left: 0.3em;
-    padding-top: 1em;
-    font-size: large;
+.fa-gem{
+    margin-right: 0.5rem;
 }
 
-.toDoList{
-    height: 70%;
-    border-top: 0.1em solid black;
-    margin-top: 0.4em ;
-    padding-left: 0.3em;
-} 
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.navbar_item{
+    height: 80px;
+}
 
-#typeHere{
-    width: 40%;
+.navbar_links{
+    color: #fff;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.navbar_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding:10px 20px;
     height: 100%;
-    border: 0.5em solid lightslategray;
-    margin: auto;
-}
-
-#taskLabel{
-    padding-left: calc(50vw - 20%);
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color: #fff;
 }
