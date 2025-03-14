@@ -1,0 +1,60 @@
+
+body{
+    background-image: url("images/bgim.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main{
+    width: 90%;
+    height: 90%;
+    margin:  auto; 
+    margin-top: 10px;
+    display: flex;
+    padding: 10px 30px;
+    justify-content: center;
+    font-size: 1.6rem;
+    background-color: beige 10%;
+    color: white;
+
+}
+
+.main_content{
+    width: 100%;
+    height: 110%;
+}
+
+.intro{
+    background-color:#f77062;
+    text-align: center;
+}
+
+.content_container{
+    display: block;
+    padding-left: 0.3rem;
+    font-size: 2rem;
+}
+.content_header{
+    font-size: 2.4rem;
+    text-transform:capitalize;
+    border-left:0.3rem solid #f77062;
+    padding: 1rem 1rem;
+}
+.content_body{
+    padding: 2rem;
+}
+
+.list>li{
+    list-style-type: none;
+    padding-top: 0.3rem;
+}
+@media screen and (max-width:960px) {
+    .main{
+        border: 0;
+    }
+}
+
+.background{
+    padding-bottom: 10px;
+}
